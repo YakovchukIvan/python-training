@@ -119,3 +119,79 @@
 # print("Long string" > 'Short')
 # print([] == [])
 # print({'a': 3} == {'a': 3})
+
+
+# int_num = 50
+# float_num = 7.5
+# str_val = 'abc'
+
+# print(int_num * str_val)
+# print(str_val * int_num)
+
+# print(int_num.__mul__(float_num))
+# NotImplemented
+
+# print(float_num.__rmul__(int_num))
+# 375.0
+
+# print(str.__doc__)
+
+# my_list = []
+
+# print(help(my_list.__eq__))
+
+
+# my_fruits = ['apple', 'banana']
+# my_fruits2 = ['apple', 'banana']
+# # my_fruits2 = ['banana', 'apple']
+
+# print(my_fruits == my_fruits2)
+
+
+# my_fruits = ['apple', 'banana', 'orange']
+# print(len(my_fruits))  # 3 - метод len показує довжину списка
+
+# ratings = [2.5, 5.0, 4.3, 3.7, 4.5]
+# print(id(ratings))
+# print(id(ratings[:]))
+# print(my_name))
+
+# my_nums = [10, 50, 0, 5, 5, 100]
+
+# other_nums = my_nums.copy()
+
+# print(id(my_nums))
+# print(id(other_nums))
+
+
+# ЗАВДАННЯ 1
+
+my_list = [True, 22, 'abc', None, [5]]
+
+# print(my_list)
+
+# del my_list[2]
+# my_list.pop(2)
+
+# # print(my_list)
+
+# print(len(my_list))
+
+my_list.reverse()
+
+print(my_list)
+
+# new_my_list = [23, 24]
+# print(new_my_list)
+
+# my_list.extend(new_my_list)
+# print(my_list)
+
+
+# ЗАВДАННЯ 2
+
+# my_list = [11, 22, 33, 44]
+# new_my_list = [23, 24]
+
+
+# print(my_list.__add__(new_my_list))
