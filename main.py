@@ -166,7 +166,7 @@
 
 # ЗАВДАННЯ 1
 
-my_list = [True, 22, 'abc', None, [5]]
+# my_list = [True, 22, 'abc', None, [5]]
 
 # print(my_list)
 
@@ -177,9 +177,9 @@ my_list = [True, 22, 'abc', None, [5]]
 
 # print(len(my_list))
 
-my_list.reverse()
+# my_list.reverse()
 
-print(my_list)
+# print(my_list)
 
 # new_my_list = [23, 24]
 # print(new_my_list)
@@ -195,3 +195,74 @@ print(my_list)
 
 
 # print(my_list.__add__(new_my_list))
+
+
+# my_motorbike = {
+#     'brand': 'Ducati',
+#     'price': '25000',
+#     'engine_vol': '1.2',
+#     'my_list': [True, 22, 'abc', None, [5]]
+# }
+
+# print(my_motorbike)
+
+# my_motorbike = {
+#     'brand': 'Ducati',
+#     'engine_vol': '1.2',
+#     'price': '25000'
+# }
+
+# key_name = 'brand'
+# my_motorbike[key_name] = 'BMW'
+# print(my_motorbike)
+
+
+# my_dict = {}
+# print(my_dict.__doc__)
+
+
+# my_disk = {}
+
+# print(id(my_disk))
+# print(type(my_disk))
+
+# my_disk['price'] = '80'
+# my_disk['brand'] = 'Samsung'
+
+# print(my_disk)
+
+# print(id(my_disk))
+# print(type(my_disk))
+
+# print(my_disk.items())
+# print(type(my_disk.items()))
+
+# print(my_disk.keys())
+# print(list(my_disk.keys()))
+
+# print(my_disk.popitem())
+
+
+# my_list = [['first', 0], ['second', True]]
+
+# my_dict = dict(my_list)
+
+# print(my_dict)
+
+# КОРИСТУВАЧ ВВОДИТЬ ПЕВНІ КЛЮЧІ І ЗНАЧЕННЯ І НА ОСНОВІ ЦЬОГО СТВОРЮЄМО СЛОВНИК
+
+my_dict = {}
+
+keys_one = input("Enter your keys_one: ")
+keys_two = input("Enter your keys_two: ")
+keys_three = input("Enter your keys_three: ")
+
+value_one = input("Enter your value_one: ")
+value_two = input("Enter your value_two: ")
+value_three = input("Enter your citvalue_threey: ")
+
+my_dict[keys_one] = value_one
+my_dict[keys_two] = value_two
+my_dict[keys_three] = value_three
+
+print(my_dict)
