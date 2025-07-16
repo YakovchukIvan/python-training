@@ -251,18 +251,41 @@
 
 # КОРИСТУВАЧ ВВОДИТЬ ПЕВНІ КЛЮЧІ І ЗНАЧЕННЯ І НА ОСНОВІ ЦЬОГО СТВОРЮЄМО СЛОВНИК
 
-my_dict = {}
+# my_dict = {}
 
-keys_one = input("Enter your keys_one: ")
-keys_two = input("Enter your keys_two: ")
-keys_three = input("Enter your keys_three: ")
+# keys_one = input("Enter your keys_one: ")
+# keys_two = input("Enter your keys_two: ")
+# keys_three = input("Enter your keys_three: ")
 
-value_one = input("Enter your value_one: ")
-value_two = input("Enter your value_two: ")
-value_three = input("Enter your citvalue_threey: ")
+# value_one = input("Enter your value_one: ")
+# value_two = input("Enter your value_two: ")
+# value_three = input("Enter your citvalue_threey: ")
 
-my_dict[keys_one] = value_one
-my_dict[keys_two] = value_two
-my_dict[keys_three] = value_three
+# my_dict[keys_one] = value_one
+# my_dict[keys_two] = value_two
+# my_dict[keys_three] = value_three
 
-print(my_dict)
+# print(my_dict)
+
+
+# my_fruits1 = 'apple'
+# my_fruits2 = 'banana'
+# my_fruits3 = 'orange'
+
+# all_fruits = (my_fruits1, my_fruits2, my_fruits3)
+# print(all_fruits)
+
+
+# my_nums = (10, 5, 100, 0, 5, 5)
+
+# my_list = list(my_nums)
+
+# my_list.append(7)
+
+# my_nums = tuple(my_list)
+# print(my_nums)
+
+
+my_touple = tuple('abcd')
+
+print(my_touple)
