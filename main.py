@@ -286,6 +286,38 @@
 # print(my_nums)
 
 
-my_touple = tuple('abcd')
+# my_touple = tuple('abcd')
 
-print(my_touple)
+# print(my_touple)
+
+# photo_dimensions = {'1920x1080', '800x600'}
+
+# print(photo_dimensions)
+
+# my_set = set()
+
+# print(my_set)
+# print(type(my_set))
+
+# a = {'abc', 'b', 'v', 'a'}
+# b = {'abc', 'r', 'v', 'a'}
+
+# print(my_set.symmetric_difference(other_set))
+# print((a | b) - (a & b))
+
+
+new_set = {1, 3, 5, 7, 10}
+print(new_set)
+
+new_set.add(2)
+print(new_set)
+
+other_set = {1, 2, 6, 8, 10}
+print(other_set)
+
+res = new_set.intersection(other_set)
+print(res)
+
+new_list = list(res)
+print``(new_list)
+print(type(new_list))
