@@ -306,18 +306,32 @@
 # print((a | b) - (a & b))
 
 
-new_set = {1, 3, 5, 7, 10}
-print(new_set)
+# new_set = {1, 3, 5, 7, 10}
+# print(new_set)
 
-new_set.add(2)
-print(new_set)
+# new_set.add(2)
+# print(new_set)
 
-other_set = {1, 2, 6, 8, 10}
-print(other_set)
+# other_set = {1, 2, 6, 8, 10}
+# print(other_set)
 
-res = new_set.intersection(other_set)
-print(res)
+# res = new_set.intersection(other_set)
+# print(res)
 
-new_list = list(res)
-print``(new_list)
-print(type(new_list))
+# new_list = list(res)
+# print(new_list)
+# print(type(new_list))
+
+
+# my_range = range(5, 50, 5)
+# # print(my_range)
+# # print(type(my_range))
+# # print(my_range[0])
+
+# my_list = []
+# print(my_list)
+# for n in my_range:
+#     my_list.append(str(n))
+#     print(str(n))
+
+# print(my_list)
