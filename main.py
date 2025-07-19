@@ -335,3 +335,44 @@
 #     print(str(n))
 
 # print(my_list)
+
+
+# fruits = ['apple', 'banana', 'lime']
+# quantities = [100, 70, 50]
+# qua = [True, False, True]
+# qua2 = [True, False, True]
+
+# fruit_qtys_zip = zip(fruits, quantities, qua, qua2)
+
+# print(fruit_qtys_zip)
+# # <zip object at 0x7fbca80a74c0>
+
+# fruit_qtys_list = list(fruit_qtys_zip)
+
+# print(fruit_qtys_list)
+# # [('apple', 100), ('banana', 70), ('lime', 50)]
+
+# shop = ['milk', 'coffee', 'bread']
+# price = [20, 7, 10]
+
+# shop_price = list(zip(shop, price))
+# print(shop_price)
+# shop_price2 = dict(zip(shop, price))
+# print(shop_price2)
+
+
+from copy import deepcopy
+
+info = {
+    'name': 'Ivan',
+    'is_instructor': 'True',
+    'reviews': [],
+}
+
+info_deepcopy = deepcopy(info)
+
+info_deepcopy['reviews'].append('Great course!')
+info['reviews'].append('Super!')
+
+print(info)
+print(info_deepcopy)
