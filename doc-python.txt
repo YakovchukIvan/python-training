@@ -805,7 +805,49 @@ print(info_deepcopy)
 
 
 
----------  --------- 
+--------- 22.01 ФУНКЦІЇ --------- 
+
+Функція це блок кода, який можна використовувати багаторазово
+
+DEF
+Головне для створення функції це метод def
+
+sum - імя функції 
+(a, b) - параметри функції
+c = a + b - тіло функції
+return - це повернення функції
+sum(a, b) - виклик функції
+
+def sum(a, b):
+    c = a + b
+    return print(c)
+
+a = 5
+b = 3
+
+sum(a, b) # 8
+
+
+
+--------- 22.02 PASS --------- 
+
+По рекомендаціям PYTHON, кожна функція повинна мати хоча би 1 строку кода. Це щось схоже як TS, коли потрібно присвоїти якесь значення const. Пусту функцію можна використовувати, коли ми хочемо наперед прописати план файла, тобто має бути певна функція, але ми її пропишемо пізніше.
+
+def my_fn():
+    pass
+
+print(my_fn())
+
+
+
+--------- 23.01 АРГУМЕНТИ В ФУНКЦІЯХ --------- 
+
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
+
+info = get_posts_info('Ivan', 25)
+print(info)
 
 
 
@@ -813,9 +855,33 @@ print(info_deepcopy)
 
 
 
+--------- 23.03 АРГУМЕНТИ З КЛЮЧОВИМИ СЛОВАМИ --------- 
 
----------  --------- 
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
 
+info = get_posts_info(name='Ivan', posts_qty=25) - передаємо аргументи відразу з підписиними перемінними
+print(info)
+
+
+
+--------- 23.04 ОБЄДНАННЯ АРГУМЕНТІВ В DICT --------- 
+
+**person — це іменовані аргументи, які збираються в словник
+
+def get_posts_info(**person):
+    print(person)
+    print(type(person))
+    info = (
+        f"{person['name']} wrote "
+        f"{person['posts_qty']} posts"
+    )
+    return info
+
+
+info = get_posts_info(name='Ivan', posts_qty=25)
+print(info)
 
 
 

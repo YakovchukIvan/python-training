@@ -361,18 +361,97 @@
 # print(shop_price2)
 
 
-from copy import deepcopy
+# from copy import deepcopy
 
-info = {
-    'name': 'Ivan',
-    'is_instructor': 'True',
-    'reviews': [],
-}
+# info = {
+#     'name': 'Ivan',
+#     'is_instructor': 'True',
+#     'reviews': [],
+# }
 
-info_deepcopy = deepcopy(info)
+# info_deepcopy = deepcopy(info)
 
-info_deepcopy['reviews'].append('Great course!')
-info['reviews'].append('Super!')
+# info_deepcopy['reviews'].append('Great course!')
+# info['reviews'].append('Super!')
 
-print(info)
-print(info_deepcopy)
+# print(info)
+# print(info_deepcopy)
+
+# def my_fn(a, b):
+#     a = a + 1
+#     c = a + b
+#     return c
+
+
+# one = 10
+# two = 5
+
+# res = my_fn(one, two)
+
+# print(res)
+
+# def increase_person_age(person):
+#     person['age'] += 1
+#     return person
+
+
+# person_one = {
+#     'name': 'Bob',
+#     'age': 21
+# }
+
+# increase_person_age(person_one)
+# print(person_one['age'])
+
+
+# def merge_list_to_dict(list_one, list_two):
+#     new_dict = dict(zip(list_one, list_two))
+#     return new_dict
+
+
+# car = ['BMW', 'Volvo', 'Ford']
+# series = ['320d', 'V50', 'Focus']
+
+# print(merge_list_to_dict(car, series))
+
+# def get_posts_info(name, posts_qty):
+#     info = f"{name} wrote {posts_qty} posts"
+#     return info
+
+
+# info = get_posts_info('Ivan', 29)
+# print(info)
+
+
+# def get_posts_info(name, posts_qty):
+#     info = f"{name} wrote {posts_qty} posts"
+#     return info
+
+
+# info = get_posts_info(posts_qty=25, name='Ivan')
+# print(info)
+
+
+# def get_posts_info(**person):
+#     print(person)
+#     print(type(person))
+#     info = (
+#         f"{person['name']} wrote "
+#         f"{person['posts_qty']} posts"
+#     )
+#     return info
+
+
+# info = get_posts_info(name='Ivan', posts_qty=25)
+# print(info)
+
+
+def merge_list_to_dict(list_one, list_two):
+    new_dict = dict(zip(list_one, list_two))
+    return new_dict
+
+
+car = ['BMW', 'Volvo', 'Ford']
+series = ['320d', 'V50', 'Focus']
+
+print(merge_list_to_dict(car, series))
