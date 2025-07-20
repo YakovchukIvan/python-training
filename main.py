@@ -446,12 +446,28 @@
 # print(info)
 
 
-def merge_list_to_dict(list_one, list_two):
-    new_dict = dict(zip(list_one, list_two))
-    return new_dict
+# def merge_list_to_dict(list_one, list_two):
+#     new_dict = dict(zip(list_one, list_two))
+#     return new_dict
 
 
-car = ['BMW', 'Volvo', 'Ford']
-series = ['320d', 'V50', 'Focus']
+# car = ['BMW', 'Volvo', 'Ford']
+# series = ['320d', 'V50', 'Focus']
 
-print(merge_list_to_dict(car, series))
+
+# print(merge_list_to_dict(list_one=car, list_two=series))
+# # Перший аргумент — позиційно, другий — за ключем:
+# print(merge_list_to_dict(car, list_two=series))
+
+
+def update_car_info(**car):
+    car['is_available'] = True
+    return car
+
+
+auto = 'BMW'
+model = '320'
+engine = '2.0'
+fuel = 'gasoline'
+
+print(update_car_info(auto=auto, model=model, engine=engine, fuel=fuel))

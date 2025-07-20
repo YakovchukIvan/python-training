@@ -857,6 +857,8 @@ print(info)
 
 --------- 23.03 АРГУМЕНТИ З КЛЮЧОВИМИ СЛОВАМИ --------- 
 
+Це покращує читаймість коду. Порядок розміщення не важливий.
+
 def get_posts_info(name, posts_qty):
     info = f"{name} wrote {posts_qty} posts"
     return info
@@ -864,6 +866,15 @@ def get_posts_info(name, posts_qty):
 info = get_posts_info(name='Ivan', posts_qty=25) - передаємо аргументи відразу з підписиними перемінними
 print(info)
 
+
+Але якщо використовуюється 1 іменований а інший не іменований аргумент, тут важливий порядок. Наприклад перший іменований агрумент який є останнім в функції, а другий не іменований, покаже помилку.
+
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
+
+info = get_posts_info(posts_qty=25, 'Ivan') - в такому випадку буде помилка
+info = get_posts_info(name='Ivan', 25) - а в такому випадку код буде працювати
 
 
 --------- 23.04 ОБЄДНАННЯ АРГУМЕНТІВ В DICT --------- 
@@ -884,6 +895,18 @@ info = get_posts_info(name='Ivan', posts_qty=25)
 print(info)
 
 
+Також можна передати ось так, таким чином функція прийме всі позиційні аргументи без імен
+!!! Але метод * завжди буде передавати з функції КОРТЕЖ
+
+def update_car_info(*car):
+    return car
+
+auto = 'BMW'
+model = '320'
+engine = '2.0'
+fuel = 'gasoline'
+
+print(update_car_info(auto, model, engine, fuel))
 
 
 
