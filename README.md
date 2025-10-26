@@ -1,4 +1,4 @@
-# ОПИС КУРСА
+# ОПИС КУРСА - BOGDAN STASHUK - Python - Повний курс Python 
 
 ---
 
